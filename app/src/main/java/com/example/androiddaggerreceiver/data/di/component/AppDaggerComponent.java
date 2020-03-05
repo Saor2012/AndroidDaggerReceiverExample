@@ -1,9 +1,9 @@
 package com.example.androiddaggerreceiver.data.di.component;
 
-import com.example.androiddaggerservice.app.App;
-import com.example.androiddaggerservice.data.di.modules.ApplicationModule;
-import com.example.androiddaggerservice.data.di.modules.BuildersModuleActivity;
-import com.example.androiddaggerservice.data.di.modules.ServiceModule;
+import com.example.androiddaggerreceiver.app.App;
+import com.example.androiddaggerreceiver.data.di.modules.ApplicationModule;
+import com.example.androiddaggerreceiver.data.di.modules.BuildersModuleActivity;
+import com.example.androiddaggerreceiver.data.di.modules.BroadcastReceiverModule;
 
 import javax.inject.Singleton;
 
@@ -15,7 +15,7 @@ import dagger.android.support.AndroidSupportInjectionModule;
 @Component(modules = {AndroidSupportInjectionModule.class,
     ApplicationModule.class,
     BuildersModuleActivity.class,
-    ServiceModule.class})
+    BroadcastReceiverModule.class})
 public interface AppDaggerComponent extends AndroidInjector<App> {
     @Component.Builder
     abstract class Builder extends AndroidInjector.Builder<App>{}

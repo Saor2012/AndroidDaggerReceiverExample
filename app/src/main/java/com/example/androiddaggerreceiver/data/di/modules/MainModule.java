@@ -1,8 +1,8 @@
 package com.example.androiddaggerreceiver.data.di.modules;
 
-import com.example.androiddaggerservice.presentation.IMainPresenter;
-import com.example.androiddaggerservice.presentation.MainActivity;
-import com.example.androiddaggerservice.presentation.MainPresenter;
+import com.example.androiddaggerreceiver.presentation.IMainPresenter;
+import com.example.androiddaggerreceiver.presentation.MainActivity;
+import com.example.androiddaggerreceiver.presentation.MainPresenter;
 
 import dagger.Binds;
 import dagger.Module;

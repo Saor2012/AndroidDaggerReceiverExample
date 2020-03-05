@@ -6,9 +6,12 @@ import java.io.ByteArrayOutputStream;
 
 import javax.inject.Inject;
 
+import timber.log.Timber;
+
 public class MainPresenter implements IMainPresenter.Presenter{
     @Inject
     IMainPresenter.View view;
+    private final String REQUEST_CODE_GPS = "GPS_LOCATION";
 
     @Inject
     public MainPresenter() {}
@@ -26,11 +29,9 @@ public class MainPresenter implements IMainPresenter.Presenter{
 
     @Override
     public void sendQuery() {
-        if (image != null){
-
-            view.sendQuery(byteArray);
-        } else {
-            view.toast("Error image null method send Presenter");
+        Timber.e("Start intent presenter");
+        if (view != null) {
+            view.sendQuery(REQUEST_CODE_GPS);
         }
     }
 }

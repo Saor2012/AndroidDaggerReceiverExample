@@ -1,6 +1,6 @@
 package com.example.androiddaggerreceiver.data.di.modules;
 
-import com.example.androiddaggerservice.presentation.MainActivity;
+import com.example.androiddaggerreceiver.presentation.MainActivity;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
